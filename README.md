@@ -1,2 +1,3 @@
-# Dotfiles
-Dotfiles
+Dependencies:
+hyprland 
+rofi wayland lbon
