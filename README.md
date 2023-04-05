@@ -1,3 +1,4 @@
 Dependencies:
-hyprland 
-rofi wayland lbon
+hyprland#
+rofi wayland lbon#
+kitty#
