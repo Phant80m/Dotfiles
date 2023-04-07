@@ -1,4 +1,2 @@
-Dependencies:
-hyprland#
-rofi wayland lbon#
-kitty#
+neovim cfg
+self explantory very easy config
