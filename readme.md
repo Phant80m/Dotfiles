@@ -17,7 +17,7 @@
 <details><summary>Preview</summary><blockquote>
 <h1> Preview </h1>
 
-![](https://github.com/Phant80m/Dotfiles/blob/sakura/preview.png)
-![](https://github.com/Phant80m/Dotfiles/blob/sakura/preview_1.png)
-![](https://github.com/Phant80m/Dotfiles/blob/sakura/preview_2.png)
+![](https://raw.githubusercontent.com/Phant80m/Dotfiles/main/preview_1.png)
+![](https://raw.githubusercontent.com/Phant80m/Dotfiles/main/preview_1.png)
+![](https://raw.githubusercontent.com/Phant80m/Dotfiles/main/preview_2.png)
 </div>
