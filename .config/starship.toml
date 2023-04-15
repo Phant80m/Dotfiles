@@ -1,0 +1,66 @@
+format = """
+[](bg:#c6a0f6 fg:#24273A)\
+$directory\
+[](fg:#c6a0f6 bg:#f5bde6)\
+$git_branch\
+[](fg:#f5bde6 bg:#b7bdf8)\
+$c\
+$golang\
+$nodejs\
+$nim\
+$rust\
+[ ](fg:#b7bdf8)\
+"""
+
+[directory]
+style = "bg:#c6a0f6 fg:black"
+format = "[$read_only $path ]($style)"
+truncation_length = 10
+truncation_symbol = "…/"
+read_only = ""
+
+[directory.substitutions]
+"Documents" = " "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+"code" = "󰈮 "
+[c]
+symbol = " "
+style = "bg:#86BBD8"
+format = '[ $symbol ($version) ]($style)'
+
+[git_branch]
+symbol = ""
+style = "bg:#f5bde6 fg:black"
+format = '[ $symbol $branch]($style)'
+
+[git_status]
+style = "bg:red"
+format = '[$all_status$ahead_behind ]($style)'
+
+[golang]
+symbol = " "
+style = "bg:#86BBD8"
+format = '[ $symbol ($version) ]($style)'
+
+[nodejs]
+symbol = ""
+style = "bg:#86BBD8"
+format = '[ $symbol ($version) ]($style)'
+
+[nim]
+symbol = " "
+style = "bg:#86BBD8"
+format = '[ $symbol ($version) ]($style)'
+
+[rust]
+symbol = ""
+style = "bg:#b7bdf8 fg:black"
+# format = '[ $symbol ($version) ]($style)'
+format = '[ $symbol ]($style)'
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+style = "bg:#33658A"
+format = '[ ♥ $time ]($style)'

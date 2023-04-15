@@ -1,0 +1,138 @@
+* {
+        font-family: JetBrainsMono Nerd Font;
+        font-size: 17px;
+}
+
+window#waybar {
+        background-color: rgba(36, 39, 58, 0.8);
+        border-radius: 15px;
+        border: 2px solid rgba(198, 160, 246, 0.8);
+	padding: 2px;
+        color: #ffffff;
+	border-radius: 15px;
+
+}
+/* center module */
+
+#custom-media {
+ color: #8aadf4;
+ border-radius: 15px;
+ padding-left: 40px;
+ padding-right: 40px;
+ border: 1.5 solid #181926;
+ background-color: #181926;
+ margin: 2px;
+ /* border: 1.5 solid rgba(198, 160, 246, 0.5); */ 
+}
+
+
+/* workspaces */
+#workspaces {
+ background-color: #181926;
+ color: #91d7e3;
+ border-radius: 15px;
+ padding-left: 2px;
+ padding-right: 2px;
+ margin: 2px;
+ border: 0px transparent;
+ /* border: 1.5 solid rgba(198, 160, 246, 0.5); */ 
+}
+#workspaces button {
+ background-color: transparent;
+ color: #cad3f5;
+ border-radius: 15px;
+ border: 0px transparent;
+}
+#workspaces button:hover {
+        background-color: #cad3f5;
+}
+#workspaces button.active {
+ color: #f5bde6;
+ border: 0px transparent;
+}
+
+/* pulseaudio */ 
+#pulseaudio {
+ background-color: #181926;
+ padding-left: 12px;
+ padding-right: 12px;
+ border-radius: 15px;
+ color: #a6da95;
+ margin: 2px;
+ /* border: 1.5 solid rgba(198, 160, 246, 0.5); */ 
+}
+
+/*battery custom */
+#battery {
+ background-color: #181926;
+ padding: 6px;
+ border-radius: 15px;
+ color: #eed49f;
+ margin: 2px;
+ /* border: 1.5 solid rgba(198, 160, 246, 0.5); */ 
+}
+#network {
+ color: #f5a97f;
+ padding-left: 15px;
+ padding-right: 15px;
+ border-radius: 15px;
+ background-color: #181926;
+ margin: 2px;
+
+}
+#custom-power-menu {
+ padding-left: 20px;
+ padding-right: 20px;
+ border-radius: 15px;
+ background-color: #181926;
+ color: #ed8796;
+ margin: 2px;
+ /* border: 1.5 solid rgba(198, 160, 246, 0.5); */ 
+}
+
+#custom-launcher {
+ padding-left: 15px;
+ padding-right: 20px;
+ background-color: #181926;
+ border-radius: 15px;
+ margin: 2px;
+}
+#tray {
+ color: #f5a97f;
+ padding-left: 15px;
+ padding-right: 15px;
+ border-radius: 15px;
+ background-color: #181926;
+ margin: 2px;
+
+}
+#custom-focus {
+ color: #f0c6c6;
+ padding-left: 15px;
+ padding-right: 20px;
+ background-color: #181926;
+ border-radius: 15px;
+ margin: 2px;
+}
+
+#clock {
+ color: #c6a0f6;
+ border-radius: 15px;
+ padding-left: 40px;
+ padding-right: 40px;
+ border: 1.5 solid #181926;
+ background-color: #181926;
+ margin: 2px;
+ /* border: 1.5 solid rgba(198, 160, 246, 0.5); */ 
+}
+
+#custom-weather {
+ color: #8bd5ca;
+ border-radius: 15px;
+ padding-left: 15px;
+ padding-right: 15px;
+ border: 1.5 solid #181926;
+ background-color: #181926;
+ margin: 2px;
+ /* border: 1.5 solid rgba(198, 160, 246, 0.5); */ 
+}

@@ -1,0 +1,124 @@
+{
+	"height": 48, 
+	"layer": "top",
+	"margin-top": 6,
+	"margin-left": 15,
+	"margin-bottom": 0,
+	"margin-right": 15,
+	"spacing": 8,
+	"modules-left": ["custom/launcher", "custom/focus", "wlr/workspaces", "clock"],
+	"modules-center": ["custom/media"],
+	"modules-right": ["tray", "custom/weather", "pulseaudio", "battery", "network", "custom/power-menu"],
+
+	// workspace config,
+	"wlr/workspaces": {
+
+		"format": "{icon}",
+		"on-click": "activate",
+		"format-icons": {
+		"1": "",
+		"2": "",
+		"3": "",
+		"4": "",
+		"5": "",
+		"6": "",
+		"7": "",
+		"8": "",
+		"9": "",
+		"urgent": "",
+		"active": "",
+		"default": ""
+		}
+	},
+
+	// modules-right
+	"pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "  {volume}%",
+        "format-bluetooth-muted": " ",
+	"format-muted": "婢",
+	"format-icons": {
+		"default": ["", "", ""],
+		"headphone": ["", "", ""],
+	},
+	"on-click": "pavucontrol",
+	"on-double-click": "pkill -9 pavucontrol",
+	},
+
+	"battery": {
+		"bat": "BAT0",
+		"adapter": "ADP0",
+		"interval": 60,
+		"states": {
+			"warning":  30,
+			"critical": 15
+		},
+		"format": "{icon} {capacity}%",
+		"format-warning": "{icon} {capacity}%",
+		"format-critical": "{icon} {capacity}%",
+		"format-charging": "<span font-family='Font Awesome 6 Free'></span> {capacity}%",
+		"format-plugged": "  {capacity}%",
+		"format-alt": "{icon} {time}",
+		"format-full": "  {capacity}%",
+		"format-icons": [" ", " ", " ", " ", " "],
+	},
+	"tray": {
+	"spacing": 15,
+	},
+
+
+	// modules-center
+
+	"clock": {
+
+		"interval": 60,
+		"format": "{:%I:%M %p}",
+		"format-alt": "{:%a %b %d}",
+		"max-length": 25,
+	},
+	//powermenu
+	"custom/power-menu": {
+		"format": "⏻",
+		"on-double-click": "bash $HOME/.config/waybar/scripts/power.sh",
+	},
+
+
+	// launcher
+	"custom/launcher": {
+	        "format": "<span color='#c6a0f6'></span>",
+		"on-double-click": "rofi -show drun",
+	},
+
+	"network": {
+	        "format-wifi": "直 {signalStrength}%",
+		// "format-alt": "double click to select network:",
+		"format-ethernet": " wired",
+		"format-disconnected": "睊",
+		"on-double-click": "bash ~/.config/waybar/scripts/network.sh",
+		"format-disconnected": "Disconnected  ",
+	},
+	"custom/focus": {
+		"format": "󰽥",
+		"on-click": "bash ~/.config/hypr/main/default/scripts/sleep.sh pause",
+		"on-click-right": "bash ~/.config/hypr/main/default/scripts/sleep.sh resume",
+
+	},
+	"custom/weather": {
+		"exec": "python3 ~/.config/waybar/scripts/weather.py",
+		"restart-interval": 300,
+		"return-type": "json",
+		},   
+	"custom/media": {
+		"format": "{icon} {}",
+		"return-type": "json",
+		"max-length": 32,
+		"escape": true,
+		"format-icons": {
+			"default": " "
+		},
+		"on-click": "playerctl play-pause",
+		"on-click-forward": "playerctl next",
+		"on-click-backward": "playerctl previous",
+		"exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null"
+	},
+}
