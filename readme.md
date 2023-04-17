@@ -14,6 +14,7 @@
 <img alt="Issues" src="https://img.shields.io/github/issues/phant80m/dotfiles?style=for-the-badge&logo=bilibili&color=F5E0DC&logoColor=D9E0EE&labelColor=302D41" />
 </a>
 </div>
+
 ### one command install 
 ---
 
