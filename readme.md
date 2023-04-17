@@ -14,6 +14,12 @@
 <img alt="Issues" src="https://img.shields.io/github/issues/phant80m/dotfiles?style=for-the-badge&logo=bilibili&color=F5E0DC&logoColor=D9E0EE&labelColor=302D41" />
 </a>
 </div>
+### one command install 
+---
+
+```bash
+    curl -sSL https://raw.githubusercontent.com/Phant80m/Dotfiles/main/install.sh | bash
+```
 <details><summary>Preview</summary><blockquote>
 <h1> Preview </h1>
 
