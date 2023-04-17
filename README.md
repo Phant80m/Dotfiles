@@ -1,2 +1,4 @@
-neovim cfg
-self explantory very easy config
+# CONFIG MOVED:
+---
+please visit phant80m/nvim
+
