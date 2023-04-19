@@ -8,9 +8,9 @@ for dir in hypr waybar rofi dunst zellij kitty fish; do
     echo -n "Copying $dir...[          ]"
     cp -r "$HOME/.config/$dir" "$DEST/"
     echo -ne "\rCopying $dir...[###       ]"
-    sleep 0.5
+    sleep 0.1
     echo -ne "\rCopying $dir...[######    ]"
-    sleep 0.5
+    sleep 0.1
     echo -e "\rCopying $dir...[Done]"
 done
 
