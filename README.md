@@ -1,4 +1,4 @@
 # CONFIG MOVED:
 ---
-please visit phant80m/nvim
+please visit https://github.com/phant80m/nvim
 
