@@ -24,7 +24,7 @@
 <details><summary>Preview</summary><blockquote>
 <h1> Preview </h1>
 
-![](https://raw.githubusercontent.com/Phant80m/Dotfiles/main/preview_1.png)
+![](https://raw.githubusercontent.com/Phant80m/Dotfiles/main/preview.png)
 ![](https://raw.githubusercontent.com/Phant80m/Dotfiles/main/preview_1.png)
 ![](https://raw.githubusercontent.com/Phant80m/Dotfiles/main/preview_2.png)
 </div>
