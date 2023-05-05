@@ -205,7 +205,7 @@ Options:
 //   - true (default)
    - false
 //
-pane_frames true
+pane_frames false
 
 // Toggle between having Zellij lay out panes according to a predefined set of layouts whenever possible
 // Options:
@@ -232,18 +232,18 @@ themes {
          black 0 0 0
          white 255 255 255
      }
-     catppuccin-macchiato {
-	bg "#5b6078"
-	fg "#cad3f5"
-	red "#ed8796"
-	green "#c6a0f6"
-	blue "#8aadf4"
-	yellow "#eed49f"
-	magenta "#f5bde6"
-	orange "#f5a97f"
-	cyan "#91d7e3"
-	black "#1e2030"
-	white "#cad3f5"
+    catppuccin-macchiato {
+	    bg "#5b6078"
+	    fg "#cad3f5"
+	    red "#ed8796"
+	    green "#c6a0f6"
+	    blue "#8aadf4"
+	    yellow "#eed49f"
+	    magenta "#f5bde6"
+	    orange "#f5a97f"
+	    cyan "#91d7e3"
+	    black "#1e2030"
+	    white "#cad3f5"
     }
 }
 // green "#a6da95"

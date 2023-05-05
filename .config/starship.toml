@@ -1,3 +1,10 @@
+############################################
+#
+#  phant80m fish starship prompt
+# 	partially incomplete
+# mismatches colors from old theme
+#
+############################################
 format = """
 [](bg:#c6a0f6 fg:#24273A)\
 $directory\
@@ -11,13 +18,18 @@ $nim\
 $rust\
 [ ](fg:#b7bdf8)\
 """
-
+# right_format = """\
+# [](fg:#c6a0f6)\
+# $time\
+# [](fg:#c6a0f6)\
+# """
+#24273A
 [directory]
 style = "bg:#c6a0f6 fg:black"
 format = "[$read_only $path ]($style)"
 truncation_length = 10
 truncation_symbol = "…/"
-read_only = ""
+read_only = " "
 
 [directory.substitutions]
 "Documents" = " "
@@ -27,7 +39,7 @@ read_only = ""
 "code" = "󰈮 "
 [c]
 symbol = " "
-style = "bg:#86BBD8"
+style = "bg:#b7bdf8"
 format = '[ $symbol ($version) ]($style)'
 
 [git_branch]
@@ -62,5 +74,5 @@ format = '[ $symbol ]($style)'
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
-style = "bg:#33658A"
-format = '[ ♥ $time ]($style)'
+style = "bg:#c6a0f6 fg:black" 
+format = '[  $time ]($style)'

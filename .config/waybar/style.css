@@ -4,12 +4,12 @@
 }
 
 window#waybar {
-        background-color: rgba(36, 39, 58, 0.8);
+        background-color: rgba(36, 39, 58, 0.0);
         border-radius: 15px;
-        border: 2px solid rgba(198, 160, 246, 0.8);
-	padding: 2px;
+        border: 2px solid rgba(198, 160, 246, 0.0);
+      	padding: 2px;
         color: #ffffff;
-	border-radius: 15px;
+       	border-radius: 15px;
 
 }
 /* center module */
@@ -22,7 +22,8 @@ window#waybar {
  border: 1.5 solid #181926;
  background-color: #181926;
  margin: 2px;
- /* border: 1.5 solid rgba(198, 160, 246, 0.5); */ 
+ /* border: 1.5 solid rgba(198, 160, 246, 0.5); */
+ /* box-shadow: rgba(0, 0, 0, 0.3) 2 2 2 2px; */
 }
 
 
@@ -31,8 +32,8 @@ window#waybar {
  background-color: #181926;
  color: #91d7e3;
  border-radius: 15px;
- padding-left: 2px;
- padding-right: 2px;
+ padding-left: 10px;
+ padding-right: 10px;
  margin: 2px;
  border: 0px transparent;
  /* border: 1.5 solid rgba(198, 160, 246, 0.5); */ 
@@ -54,8 +55,8 @@ window#waybar {
 /* pulseaudio */ 
 #pulseaudio {
  background-color: #181926;
- padding-left: 12px;
- padding-right: 12px;
+ padding-left: 20px;
+ padding-right: 20px;
  border-radius: 15px;
  color: #a6da95;
  margin: 2px;
@@ -82,7 +83,7 @@ window#waybar {
 }
 #custom-power-menu {
  padding-left: 20px;
- padding-right: 20px;
+ padding-right: 23px;
  border-radius: 15px;
  background-color: #181926;
  color: #ed8796;
@@ -91,16 +92,16 @@ window#waybar {
 }
 
 #custom-launcher {
- padding-left: 15px;
- padding-right: 20px;
+ padding-left: 18px;
+ padding-right: 23px;
  background-color: #181926;
  border-radius: 15px;
  margin: 2px;
 }
 #tray {
  color: #f5a97f;
- padding-left: 15px;
- padding-right: 15px;
+ padding-left: 20px;
+ padding-right: 20px;
  border-radius: 15px;
  background-color: #181926;
  margin: 2px;
@@ -108,8 +109,8 @@ window#waybar {
 }
 #custom-focus {
  color: #f0c6c6;
- padding-left: 15px;
- padding-right: 20px;
+ padding-left: 20px;
+ padding-right: 23px;
  background-color: #181926;
  border-radius: 15px;
  margin: 2px;
@@ -129,10 +130,27 @@ window#waybar {
 #custom-weather {
  color: #8bd5ca;
  border-radius: 15px;
- padding-left: 15px;
- padding-right: 15px;
+ padding-left: 24px;
+ padding-right: 24px;
  border: 1.5 solid #181926;
  background-color: #181926;
  margin: 2px;
  /* border: 1.5 solid rgba(198, 160, 246, 0.5); */ 
 }
+
+window .modules-left {
+ padding: 5px;
+ background-color: #11111b;
+ border-radius: 15px;
+ 
+}
+
+window .modules-right {
+ padding: 5px;
+ background-color: #11111b;
+ border-radius: 15px;
+}
+
+
+
+ 

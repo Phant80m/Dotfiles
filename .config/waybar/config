@@ -6,13 +6,23 @@
 	"margin-bottom": 0,
 	"margin-right": 15,
 	"spacing": 8,
-	"modules-left": ["custom/launcher", "custom/focus", "wlr/workspaces", "clock"],
-	"modules-center": ["custom/media"],
+	"modules-left": ["custom/launcher", "custom/focus", "wlr/workspaces", "clock", "custom/media"],
+	"modules-center": [],
 	"modules-right": ["tray", "custom/weather", "pulseaudio", "battery", "network", "custom/power-menu"],
 
 	// workspace config,
 	"wlr/workspaces": {
-
+		"persistent_workspaces": {
+			"1": [],
+			"2": [],
+			"3": [],
+			"4": [],
+			"5": [],
+			"6": [],
+			"7": [],
+			"8": [],
+			"9": [],
+		},
 		"format": "{icon}",
 		"on-click": "activate",
 		"format-icons": {
@@ -117,8 +127,8 @@
 			"default": " "
 		},
 		"on-click": "playerctl play-pause",
-		"on-click-forward": "playerctl next",
-		"on-click-backward": "playerctl previous",
+		"on-click-right": "playerctl next",
+		"on-click-middle": "playerctl previous",
 		"exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null"
 	},
 }
