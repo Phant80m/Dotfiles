@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set directory to wallpaper folder
-dir="$HOME/.config/hypr/main/default/wallpaper"
+dir="$HOME/.config/hypr/wallpaper"
 
 # Create array of images in directory
 images=( $(ls $dir) )

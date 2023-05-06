@@ -232,6 +232,7 @@ themes {
          black 0 0 0
          white 255 255 255
      }
+    
     catppuccin-macchiato {
 	    bg "#5b6078"
 	    fg "#cad3f5"
@@ -245,13 +246,27 @@ themes {
 	    black "#1e2030"
 	    white "#cad3f5"
     }
+    
+  catppuccin-mocha {
+        bg "#585b70" // Surface2
+        fg "#cdd6f4"
+        red "#f38ba8"
+        green "#a6e3a1"
+        blue "#89b4fa"
+        yellow "#f9e2af"
+        magenta "#f5c2e7" //  Pink
+        orange "#fab387" // Peach
+        cyan "#89dceb" // Sky
+        black "#181825" // Mantle
+        white "#cdd6f4"
+    }
 }
 // green "#a6da95"
 // Choose the theme that is specified in the themes section.
 // Default: default
 //
 theme "catppuccin-macchiato"
-
+//theme "catppuccin-mocha"
 // The name of the default layout to load on startup
 // Default: "default"
 //
