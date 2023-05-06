@@ -15,12 +15,12 @@ for dir in hypr waybar rofi dunst zellij kitty fish; do
 done
 
 echo -n "Copying starship.toml...[          ]"
-cp "$HOME/.config/starship/" "$DEST/"
-echo -ne "\rCopying starship.toml...[###       ]"
-sleep 0.5
-echo -ne "\rCopying starship.toml...[######    ]"
-sleep 0.5
-echo -e "\rCopying starship.toml...[Done]"
+cp -r "$HOME/.config/starship/" "$DEST/"
+echo -ne "\rCopying starship...[###       ]"
+sleep 0.1
+echo -ne "\rCopying starship...[######    ]"
+sleep 0.1
+echo -e "\rCopying starship...[Done]"
 
 # Commit changes to git
 cd "$HOME/git/Dotfiles"
