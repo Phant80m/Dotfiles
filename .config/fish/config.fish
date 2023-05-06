@@ -13,6 +13,7 @@ set -gx PATH "$HOME/.local/bin/" $PATH;
 set -fx EDITOR nvim
 set -gx QT_STYLE_OVERRIDE kvantum
 set -gx BAT_THEME Catppuccin-macchiato
+set -x STARSHIP_CONFIG ~/.config/starship/starship.toml 
 
 set -Ux FZF_DEFAULT_OPTS "\
 --color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \

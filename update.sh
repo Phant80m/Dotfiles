@@ -15,7 +15,7 @@ for dir in hypr waybar rofi dunst zellij kitty fish; do
 done
 
 echo -n "Copying starship.toml...[          ]"
-cp "$HOME/.config/starship.toml" "$DEST/"
+cp "$HOME/.config/starship/" "$DEST/"
 echo -ne "\rCopying starship.toml...[###       ]"
 sleep 0.5
 echo -ne "\rCopying starship.toml...[######    ]"
@@ -26,7 +26,7 @@ echo -e "\rCopying starship.toml...[Done]"
 cd "$HOME/git/Dotfiles"
 git add .
 git commit -m "configs updated on $(date +%d/%m/%Y)"
-
+rm -rf ./.config/kitty/.svn/
 # Push changes to remote repository
 git push
 
