@@ -31,6 +31,7 @@ alias str 'df -h | grep "/dev/nvme0n1p2"'
 alias code 'cd ~/Documents/code	'
 alias cat 'bat'
 alias hx 'helix'
+alias pacman 'sudo pacman'
 # remove greeting
 set -U fish_greeting
 
