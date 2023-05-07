@@ -21,6 +21,27 @@
 ```bash
     curl -sSL https://raw.githubusercontent.com/Phant80m/Dotfiles/main/install.sh | bash
 ```
+
+### Checklist:
+---
+- [x] Vertical bar
+- [x] Horizontal Bar
+- [x] Animations
+- [ ] effects & filters
+- [ ] more features i dont know of
+- [x] workflow
+
+### Features 
+---
+- vertical bar and horizontal bar, powered by Waybar and Ironbar
+- Animations and custom curves for smooth transitions
+- script for quickly changing bars, and workspace animations
+- beutiful helix configuration
+- sww wallpaper changing + animations
+- rofi wifi menu, wallpaper switcher and more.
+- kitty setup 
+- Starship prompt + follows sakura theme
+- more!
 <details><summary>Preview</summary><blockquote>
 <h1> Preview </h1>
 
