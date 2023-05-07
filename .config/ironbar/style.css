@@ -1,0 +1,142 @@
+* {
+        font-family: JetBrainsMono Nerd Font;
+        font-size: 15px;
+}
+
+.background {
+        background-color: #11111b;
+        border-radius: 15px;
+        border: 2px solid rgba(198, 160, 246, 0.0);
+      	padding: 2px;
+        color: #ffffff;
+       	border-radius: 20px;
+  
+}
+
+#clock {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  color: #c6a0f6;
+  margin: 10px;
+  border: 1.5 solid #181926;
+  background-color: #181926;
+}
+#clock:hover {
+  background-color: #11111b;
+  border: 1.5 solid transparent;
+}
+
+#workspaces .item {
+ padding: 6px;
+ background-color: #181926;
+ color: #cdd6f4;
+ border-radius: 20px;
+ margin: 10px;
+}
+#workspaces .item.focused {
+  color: #cba6f7;
+}
+
+#launcher {
+ color: #eba0ac;
+ background-color: #181926;
+ border-radius: 15px;
+ margin: 10px;
+}
+
+#tray {
+  margin: 10px;
+  border-radius: 20px;
+}
+#tray .item {
+  padding: 10px;
+}
+
+#music {
+ color: #8aadf4;
+ border-radius: 20px;
+ background-color: #181926;
+ margin: 10px;
+}
+#popup-music {
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+}
+#popup-music #controls #btn-play {
+  border-radius: 20px;
+  margin: 10px;
+  background-color: #a6e3a1;
+}
+#popup-music #controls #btn-next {
+  border-radius: 20px;
+  margin: 10px;
+  background-color: #181926;
+}
+#popup-music #controls #btn-prev {
+  border-radius: 20px;
+  margin: 10px;
+  background-color: #181926;
+
+ }
+#popup-music #controls #btn-pause {
+  border-radius: 20px;
+  margin: 10px;
+  background-color: #f38ba8;
+ }
+#popup-music #volume .icon {
+  color: transparent;
+}
+#popup-music #volume #slider {
+  color: transparent;
+  color: #181926;
+  background-color: #181926;
+  padding: 20px;
+  border-radius: 20px;
+}
+#popup-music #artist {
+  color: #a6e3a1;
+  background-color: #181926;
+  padding: 20px;
+  border-radius: 20px;
+ 
+}
+#popup-music #title .icon {
+  color: transparent;
+}
+#popup-music #title .label {
+  
+ color: #a6e3a1;
+  background-color: #181926;
+  padding: 20px;
+  border-radius: 20px;
+ 
+}
+#script {
+ padding-top: 20px;
+ padding-bottom: 20px;
+ background-color: #181926;
+ border-radius: 20px;
+ color: #a6da95;
+ margin: 10px;
+}
+
+.power-button {
+ border-radius: 20px;
+ background-color: #181926;
+ color: #ed8796;
+ margin: 10px;
+}
+.power-btn {
+  background-color: #181926;
+  border-radius: 20px;
+  margin: 10px;
+  color: #f38ba8;
+  padding: 50px;
+}
+.power-btn-popup {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+}

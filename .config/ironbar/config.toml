@@ -1,0 +1,98 @@
+anchor_to_edges = true
+position = 'left'
+
+margin.top = 10
+margin.bottom = 10
+margin.left = 15
+margin.right = 0
+
+height = 70
+
+
+
+
+[[start]]
+class = 'launcher'
+type = 'custom'
+
+
+[[start.bar]]
+on_click = '!rofi -show drun'
+label = ''
+name = 'launcher'
+type = 'button'
+
+[[start]]
+type = 'workspaces'
+
+[start.name_map]
+0 = ''
+1 = ''
+2 = ''
+3 = ''
+4 = ''
+5 = ''
+6 = ''
+7 = ''
+8 = ''
+9 = ''
+
+[[start]]
+type = 'tray'
+
+[[center]]
+type = 'clock'
+format = " %H:%M"
+
+ 
+[[end]]
+type = 'music'
+player_type = 'mpris'
+format = "  {title}  "
+truncate = "middle"
+icons.play = ""
+icons.pause = ""
+[[end]]
+type = "script"
+cmd = "echo -n ' ' $(pamixer --get-volume)"
+mode = "watch"
+interval = 50
+
+
+[[end]]
+class = 'power_menu'
+type = 'custom'
+
+[[end.bar]]
+on_click = 'popup:toggle'
+label = ''
+class = 'power-button'
+name = 'power-btn'
+type = 'button'
+
+[[end.popup]]
+class = 'power-btn-popup'
+orientation = 'vertical'
+type = 'box'
+
+
+[[end.popup.widgets]]
+type = 'box'
+
+[[end.popup.widgets.widgets]]
+class = 'power-btn'
+on_click = '!shutdown now'
+label = '''<span font-size='40pt'></span>'''
+type = 'button'
+
+[[end.popup.widgets.widgets]]
+class = 'power-btn'
+on_click = '!reboot'
+label = '''<span font-size='40pt'></span>'''
+type = 'button'
+
+[[end.popup.widgets]]
+label = '''Uptime: {{30000:uptime -p | cut -d ' ' -f2-}}'''
+name = 'uptime'
+type = 'label'
+

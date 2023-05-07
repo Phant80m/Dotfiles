@@ -4,7 +4,7 @@
 DEST="$HOME/git/Dotfiles/.config"
 
 # Copy the specified directories and file to the destination directory
-for dir in hypr waybar rofi dunst zellij kitty fish; do
+for dir in hypr waybar rofi dunst zellij kitty fish ironbar; do
     echo -n "Copying $dir...[          ]"
     cp -r "$HOME/.config/$dir" "$DEST/"
     echo -ne "\rCopying $dir...[###       ]"
