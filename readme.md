@@ -21,6 +21,8 @@
 ```bash
     curl -sSL https://raw.githubusercontent.com/Phant80m/Dotfiles/main/install.sh | bash
 ```
+#### alternatively use phant80m/stow
+will auto link it. works best 
 
 ### Checklist:
 ---
