@@ -29,7 +29,7 @@ copy_files "tmp_dotfiles/.config/zellij" "$DEST/" "zellij"
 copy_files "tmp_dotfiles/.config/kitty" "$DEST/" "kitty"
 copy_files "tmp_dotfiles/.config/fish/" "$DEST/" "fish"
 copy_files "tmp_dotfiles/.config/starship.toml" "$DEST/" "starship.toml"
-
+copy_files "tmp_dotfiles/.config/ironbar" "$DEST/" "ironbar"
 # Check whether yay or paru is installed
 if which yay &>/dev/null; then
     AUR_INSTALLER="yay -S --noconfirm"
@@ -57,5 +57,5 @@ fi
 
 # Clean up temporary directory
 rm -rf tmp_dotfiles
-echo -e "\033[0;31m Thank you for installing Phan80m's dotfiles :) \033[0m"
+echo -e "\033[0;31m Thank you for installing Phan80m's dotfiles :)\n to use the vertical bar: cargo install ironbar \033[0m"
 

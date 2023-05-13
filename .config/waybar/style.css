@@ -19,7 +19,7 @@ window#waybar {
  border-radius: 15px;
  padding-left: 40px;
  padding-right: 40px;
- border: 1.5 solid #181926;
+ border: 1.5px solid #181926;
  background-color: #181926;
  margin: 2px;
  /* border: 1.5 solid rgba(198, 160, 246, 0.5); */
@@ -121,7 +121,7 @@ window#waybar {
  border-radius: 15px;
  padding-left: 40px;
  padding-right: 40px;
- border: 1.5 solid #181926;
+ border: 1.5px solid #181926;
  background-color: #181926;
  margin: 2px;
  /* border: 1.5 solid rgba(198, 160, 246, 0.5); */ 
@@ -132,7 +132,7 @@ window#waybar {
  border-radius: 15px;
  padding-left: 24px;
  padding-right: 24px;
- border: 1.5 solid #181926;
+ border: 1.5px solid #181926;
  background-color: #181926;
  margin: 2px;
  /* border: 1.5 solid rgba(198, 160, 246, 0.5); */ 

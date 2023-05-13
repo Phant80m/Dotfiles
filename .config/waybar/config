@@ -1,5 +1,5 @@
 {
-	"height": 48, 
+	"height": 50, 
 	"layer": "top",
 	"margin-top": 6,
 	"margin-left": 15,
@@ -109,8 +109,8 @@
 	},
 	"custom/focus": {
 		"format": "󰽥",
-		"on-click": "bash ~/.config/hypr/main/default/scripts/sleep.sh pause",
-		"on-click-right": "bash ~/.config/hypr/main/default/scripts/sleep.sh resume",
+		"on-click": "bash ~/.config/hypr/scripts/sleep.sh pause",
+		"on-click-right": "bash ~/.config/hypr/scripts/sleep.sh resume",
 
 	},
 	"custom/weather": {
