@@ -140,14 +140,14 @@ window#waybar {
 
 window .modules-left {
  padding: 5px;
- background-color: #11111b;
- border-radius: 15px;
+ background-color: rgba(17, 17, 27, 1);
+  border-radius: 15px;
  
 }
 
 window .modules-right {
  padding: 5px;
- background-color: #11111b;
+ background-color: rgba(17, 17, 27, 1);
  border-radius: 15px;
 }
 
