@@ -1,0 +1,4 @@
+[[language]]
+name = "rust"
+comment-token = "//"
+ 
