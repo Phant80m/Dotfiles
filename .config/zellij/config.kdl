@@ -201,9 +201,9 @@ simplified_ui true
 default_shell "fish"
 
 // Toggle between having pane frames around the panes
-Options:
+//Options:
 //   - true (default)
-   - false
+//   - false
 //
 pane_frames false
 
@@ -212,7 +212,7 @@ pane_frames false
 //   - true (default)
 //   - false
 //
-// auto_layout true
+auto_layout true
 
 // Define color themes for Zellij
 // For more examples, see: https://github.com/zellij-org/zellij/tree/main/example/themes

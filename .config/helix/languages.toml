@@ -1,0 +1,16 @@
+[[language]]
+name = "rust"
+comment-token = "//"
+
+[[language]]
+name = "html"
+indent = { tab-width = 2, unit = "  " }
+language-server = { command = "emmet-ls", args = ["--stdio"] }
+formatter = { command = "emmet-ls" , args = ["--stdin"] }
+ 
+[[language]]
+name = "css"
+indent = { tab-width = 2, unit = "  " }
+language-server = { command = "css-languageserver", args = ["--stdio"] }
+formatter = { command = "css-languageserver" , args = ["--stdin"] }
+ 

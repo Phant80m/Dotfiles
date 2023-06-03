@@ -11,5 +11,5 @@ selected=$(printf '%s\n' "${images[@]}" | rofi -dmenu -p "Select wallpaper image
 
 # If user selects an image, run command with selected image as argument
 if [[ -n $selected ]]; then
-  swww img "$dir/$selected" --transition-step 20 --transition-type random --transition-fps 60
+  swww img "$dir/$selected" --transition-step 60 --transition-type random --transition-fps 60
 fi
