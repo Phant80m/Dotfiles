@@ -16,6 +16,7 @@ $golang\
 $nodejs\
 $nim\
 $rust\
+$python\
 [ ](fg:#b7bdf8)\
 """
 # right_format = """\
@@ -39,7 +40,7 @@ read_only = " "
 "code" = "󰈮 "
 [c]
 symbol = " "
-style = "bg:#b7bdf8"
+style = "bg:#b7bdf8 fg:black"
 format = '[ $symbol ($version) ]($style)'
 
 [git_branch]
@@ -53,7 +54,7 @@ format = '[$all_status$ahead_behind ]($style)'
 
 [golang]
 symbol = " "
-style = "bg:#86BBD8"
+style = "bg:#b7bdf8 fg:black"
 format = '[ $symbol ($version) ]($style)'
 
 [nodejs]
@@ -65,6 +66,12 @@ format = '[ $symbol ($version) ]($style)'
 symbol = " "
 style = "bg:#86BBD8"
 format = '[ $symbol ($version) ]($style)'
+
+[python]
+symbol = ""
+style = "bg:#b7bdf8 fg:black"
+format = '[ $symbol ($version)]($style)'
+
 
 [rust]
 symbol = ""

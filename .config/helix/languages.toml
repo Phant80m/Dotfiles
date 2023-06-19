@@ -14,3 +14,19 @@ indent = { tab-width = 2, unit = "  " }
 language-server = { command = "css-languageserver", args = ["--stdio"] }
 formatter = { command = "css-languageserver" , args = ["--stdin"] }
  
+[[language]]
+
+name = "go"
+scope = "source.go"
+injection-regex = "go"
+file-types = ["go"]
+roots = ["Gopkg.toml", "go.mod"]
+auto-format = true
+comment-token = "//"
+language-server = { command = "gopls" }
+indent = { tab-width = 4, unit = "\t" }
+
+[[language]]
+name = "astro"
+language-server = { command = "astro-ls", args = ["--stdio"]}
+formatter = { command = "astro-ls", args = ["--stdin"]}

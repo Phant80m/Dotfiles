@@ -7,6 +7,8 @@ $HOME/.cargo/bin/zoxide init fish | source
 # init cargo and rust
 set -gx PATH "$HOME/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/" $PATH;
 set -gx PATH "$HOME/.cargo/bin" $PATH;
+set -gx PATH "$HOME/.codon/bin" $PATH;
+set -gx PATH "$HOME/go/bin" $PATH;
 set -x OPENAI_KEY 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
 set -gx PATH "$HOME/.local/bin/" $PATH;
 
