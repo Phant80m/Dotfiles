@@ -40,7 +40,7 @@ else
     echo "Installing paru aur helper."
     sudo pacman -Sy --needed base-devel
     git clone https://aur.archlinux.org/paru-bin.git paru-bin
-    cd paru-bin,
+    cd paru-bin
     makepkg -si
     rm -rf paru-bin
     exit 1
