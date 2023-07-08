@@ -10,6 +10,7 @@ line-number = "absolute"
 cursorline = true
 color-modes = true
 bufferline = "multiple"
+lsp.display-inlay-hints = false
 
 [editor.cursor-shape]
 insert = "bar"
