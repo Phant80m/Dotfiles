@@ -59,7 +59,7 @@ window#waybar {
  padding-left: 20px;
  padding-right: 20px;
  border-radius: 15px;
- color: #a6da95;
+ color: #eed49f;
  margin: 2px;
  /* border: 1.5 solid rgba(198, 160, 246, 0.5); */ 
 }
@@ -106,7 +106,22 @@ window#waybar {
  border-radius: 15px;
  background-color: #181926;
  margin: 2px;
-
+}
+#cpu {
+ color: #a6da95;
+ padding-left: 20px;
+ padding-right: 20px;
+ border-radius: 15px;
+ background-color: #181926;
+ margin: 2px;
+}
+#memory {
+ color: #8aadf4;
+ padding-left: 20px;
+ padding-right: 20px;
+ border-radius: 15px;
+ background-color: #181926;
+ margin: 2px;
 }
 #custom-focus {
  color: #f0c6c6;
