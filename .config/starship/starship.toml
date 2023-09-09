@@ -33,7 +33,7 @@ truncation_symbol = "…/"
 read_only = " "
 
 [directory.substitutions]
-"Documents" = " "
+"Documents" = "󰈙 "
 "Downloads" = " "
 "Music" = " "
 "Pictures" = " "

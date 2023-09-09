@@ -2,7 +2,8 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 starship init fish | source
-$HOME/.cargo/bin/zoxide init fish | source
+zoxide init fish | source
+source "$HOME/.config/fish/atuin"
 
 # init cargo and rust
 set -gx PATH "$HOME/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/" $PATH;
@@ -26,6 +27,7 @@ set -Ux FZF_DEFAULT_OPTS "\
 # alias
 alias ls 'exa --icons -x'
 alias la 'exa --icons -a'
+alias dir 'exa --icons -x'
 alias icat 'kitty +kitten icat'
 alias timg 'timg -p kitty'
 alias clean 'echo "This can break things! be warned" && paru -Scc && paru -Qtdq | paru -Rns -'
@@ -36,6 +38,7 @@ alias code 'cd ~/Documents/code	'
 alias web 'cd $HOME/Documents/web'
 alias cat 'bat -p'
 alias hx 'helix'
+alias hx. 'helix .'
 alias pkm 'pokemon-colorscripts'
 alias cd 'z'
 alias please 'sudo -e'

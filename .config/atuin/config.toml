@@ -1,0 +1,4 @@
+style = "full"
+inline_height = 20
+auto_sync = true
+sync_frequency = "1h"

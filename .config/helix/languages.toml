@@ -13,9 +13,14 @@ name = "css"
 indent = { tab-width = 2, unit = "  " }
 language-server = { command = "css-languageserver", args = ["--stdio"] }
 formatter = { command = "css-languageserver" , args = ["--stdin"] }
+
+[[language]]
+name = "json"
+indent = { tab-width = 2, unit = "  " }
+language-server = { command = "json-languageserver", args = ["--stdio"] }
+formatter = { command = "json-languageserver" , args = ["--stdin"] }
  
 [[language]]
-
 name = "go"
 scope = "source.go"
 injection-regex = "go"
@@ -30,3 +35,9 @@ indent = { tab-width = 4, unit = "\t" }
 name = "astro"
 language-server = { command = "astro-ls", args = ["--stdio"]}
 formatter = { command = "astro-ls", args = ["--stdin"]}
+
+[[language]]
+name = "typescript"
+language-server = { command = "deno", args = ["lsp"] }
+config = { enable = true }
+
