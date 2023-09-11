@@ -1,7 +1,5 @@
 <div align='center'>
 
-<img src=https://raw.githubusercontent.com/Phant80m/Dotfiles/main/preview_1.png alt="logo" width= height= />
-
 <h1>Phant80m's dotfile repo</h1>
 <p>My dotfiles repository with my configurations structured for seraphite dotfile manager</p>
 
