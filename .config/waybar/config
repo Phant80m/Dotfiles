@@ -35,25 +35,24 @@
         "format": "{icon} {volume}%",
         "format-bluetooth": "  {volume}%",
         "format-bluetooth-muted": "󰝟 ",
-	"format-muted": "󰝟 ",
-	"format-icons": {
-		"default": ["", "", ""],
-		"headphone": ["", "", ""],
+				"format-muted": "󰝟 ",
+				"format-icons": {
+				"default": ["", "", ""],
+				"headphone": ["", "", ""]
 	},
 	"on-click": "pavucontrol",
-	"on-double-click": "pkill -9 pavucontrol",
+	"on-double-click": "pkill -9 pavucontrol"
 	},
 	"cpu": {
       "interval": 10,
       "format": "  {}%",
-      "max-length": 10,
-      "on-click": "",
+      "max-length": 10
     },
 	"memory": {
         "interval": 30,
-        "format": " {}%",
+        "format": " {}%",
         "format-alt":" {used:0.1f}G",
-        "max-length": 10,
+        "max-length": 10
     },
 
 	"battery": {
@@ -71,10 +70,10 @@
 		"format-plugged": "  {capacity}%",
 		"format-alt": "{icon} {time}",
 		"format-full": "  {capacity}%",
-		"format-icons": [" ", " ", " ", " ", " "],
+		"format-icons": [" ", " ", " ", " ", " "]
 	},
 	"tray": {
-	"spacing": 15,
+	"spacing": 15
 	},
 
 
@@ -85,40 +84,41 @@
 		"interval": 60,
 		"format": "{:%I:%M %p}",
 		"format-alt": "{:%a %b %d}",
-		"max-length": 25,
+		"max-length": 25
 	},
 	//powermenu
 	"custom/power-menu": {
 		"format": "⏻",
-		"on-double-click": "bash $HOME/.config/waybar/scripts/power.sh",
+		"on-double-click": "bash $HOME/.config/waybar/scripts/power.sh"
 	},
 
 
 	// launcher
 	"custom/launcher": {
 	        "format": "<span color='#c6a0f6'></span>",
-		"on-double-click": "rofi -show drun",
+		"on-double-click": "rofi -show drun"
 	},
 
 	"network": {
 	        "format-wifi": "󰖩 {signalStrength}%",
 		// "format-alt": "double click to select network:",
-		"format-ethernet": " wired",
-		"format-disconnected": "睊",
+		"format-ethernet": "󰈀 wired",
 		"on-double-click": "bash ~/.config/waybar/scripts/network.sh",
-		"format-disconnected": "Disconnected  ",
+		"format-disconnected": "Disconnected  "
 	},
 	"custom/focus": {
-		"format": "󰽥",
+		"format": "",
 		"on-click": "bash ~/.config/hypr/scripts/sleep.sh pause",
-		"on-click-right": "bash ~/.config/hypr/scripts/sleep.sh resume",
+		"on-click-right": "bash ~/.config/hypr/scripts/sleep.sh resume"
 
 	},
 	"custom/weather": {
-		"exec": "python3 ~/.config/waybar/scripts/weather.py",
-		"restart-interval": 300,
-		"return-type": "json",
-		},   
+    	"format": "{}°",
+    	"tooltip": true,
+    	"interval": 3600,
+    	"exec": "wttrbar",
+    	"return-type": "json"
+	},
 	"custom/media": {
 		"format": "{icon} {}",
 		"return-type": "json",
@@ -131,5 +131,5 @@
 		"on-click-right": "playerctl next",
 		"on-click-middle": "playerctl previous",
 		"exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null"
-	},
+	}
 }

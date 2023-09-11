@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-entries="﫼 Logout\n⏾ Suspend\n菱 Reboot\n襤 Shutdown"
+entries="  Logout\n⏾ Suspend\n󰑓 Reboot\n Shutdown"
 
 selected=$(echo -e $entries|rofi -dmenu --cache-file /dev/null | awk '{print tolower($2)}')
 
