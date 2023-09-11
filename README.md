@@ -3,7 +3,7 @@
 <h1>Phant80m's dotfile repo</h1>
 <p>My dotfiles repository with my configurations structured for seraphite dotfile manager</p>
 
-<h4> <span> · </span> <a href="https://github.com/Phant80m/dotfiles/blob/master/README.md"> Documentation </a> <span> · </span> <a href="https://github.com/Phant80m/dotfiles/issues"> Report Bug </a> <span> · </span> <a href="https://github.com/Phant80m/dotfiles/issues"> Request Feature </a> </h4>
+<h4><span> · </span> <a href="https://github.com/Phant80m/dotfiles/issues"> Report Bug </a> <span> · </span> <a href="https://github.com/Phant80m/dotfiles/issues"> Request Feature </a> </h4>
 
 
 </div>
