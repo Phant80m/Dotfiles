@@ -46,7 +46,8 @@
 	"cpu": {
       "interval": 10,
       "format": "  {}%",
-      "max-length": 10
+      "max-length": 10,
+			"on-double-click": "bash $HOME/.config/waybar/scripts/performance.sh"
     },
 	"memory": {
         "interval": 30,
@@ -116,7 +117,7 @@
     	"format": "{}°",
     	"tooltip": true,
     	"interval": 3600,
-    	"exec": "wttrbar",
+    	"exec": "wttrbar --location Melbourne",
     	"return-type": "json"
 	},
 	"custom/media": {

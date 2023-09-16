@@ -12,6 +12,8 @@ set -gx PATH "$HOME/.codon/bin" $PATH;
 set -gx PATH "$HOME/go/bin" $PATH;
 set -x OPENAI_KEY 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
 set -gx PATH "$HOME/.local/bin/" $PATH;
+set -x QT_QPA_PLATFORM wayland
+
 
 # variables
 set -fx EDITOR helix
@@ -74,3 +76,28 @@ function pastebin
     echo $paste_url | wl-copy
     echo "Link copied to clipboard: ' $paste_url '"
 end
+function battery_health_percentage
+    # Get battery information using upower
+    set battery_info (upower -i $(upower -e | grep 'BAT') 2>/dev/null)
+
+    # Check if battery_info is empty (no battery found)
+    if test -z "$battery_info"
+        echo "Battery not found"
+        return
+    end
+
+    # Extract the design capacity and the last full capacity from battery_info
+    set design_capacity (echo "$battery_info" | grep -oP 'energy-full-design:\s*\K\d+')
+    set last_full_capacity (echo "$battery_info" | grep -oP 'energy-full:\s*\K\d+')
+
+    if test -z "$design_capacity" -o -z "$last_full_capacity"
+        echo "Design or last full capacity not available"
+        return
+    end
+
+    # Calculate the battery health percentage
+    set health_percentage (math "$last_full_capacity / $design_capacity * 100")
+
+    echo "Battery Health: $health_percentage%"
+end
+

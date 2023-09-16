@@ -1,9 +1,0 @@
-
-#!/usr/bin/bash
-
-THEME_DIR=$1
-
-swww init
-swww img $THEME_DIR/wallpapers/4.jpg --transition-type grow --transition-pos "$(hyprctl cursorpos)"
-
-waybar
