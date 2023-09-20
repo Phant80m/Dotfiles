@@ -10,7 +10,7 @@
 	"margin-bottom": 0,
 	"margin-right": 5,
 	"spacing": 8,
-	"modules-left": ["custom/launcher", "custom/focus", "hyprland/workspaces", "clock", "custom/media"],
+	"modules-left": ["custom/launcher", "custom/focus", "hyprland/workspaces", "clock", "custom/prayer", "custom/media"],
 	"modules-center": [],
 	"modules-right": ["tray", "custom/weather", "memory" ,"cpu", "pulseaudio", "battery", "network", "custom/power-menu"],
 
@@ -136,5 +136,12 @@
 		"on-click-right": "playerctl next",
 		"on-click-middle": "playerctl previous",
 		"exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null"
+	},
+	"custom/prayer": {
+		"format": "{}",
+		"return-type": "json",
+   		"tooltip": true,
+    	"interval": 3600,
+		"exec": "bilal waybar"
 	}
 }
