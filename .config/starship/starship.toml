@@ -14,7 +14,6 @@ $git_branch\
 $c\
 $golang\
 $nodejs\
-$nim\
 $rust\
 $python\
 [ ](fg:#b7bdf8)\
@@ -63,7 +62,7 @@ style = "bg:#b7bdf8 fg:black"
 format = '[ $symbol ($version) ]($style)'
 
 [nim]
-symbol = " "
+symbol = " "
 style = "bg:#86BBD8"
 format = '[ $symbol ($version) ]($style)'
 

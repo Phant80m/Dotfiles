@@ -149,6 +149,17 @@
     /* border: 1.5 solid rgba(198, 160, 246, 0.5);
      */
 }
+ #custom-prayer {
+     color: #7dc4e4;
+     border-radius: 15px;
+     padding-left: 24px;
+     padding-right: 24px;
+     border: 1.5px solid #181926;
+     background-color: #181926;
+     margin: 2px;
+    /* border: 1.5 solid rgba(198, 160, 246, 0.5);
+     */
+}
  window .modules-left {
      padding: 5px;
      background-color: rgba(17, 17, 27, 1);
