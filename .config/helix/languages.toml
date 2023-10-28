@@ -5,19 +5,19 @@ comment-token = "//"
 [[language]]
 name = "html"
 indent = { tab-width = 2, unit = "  " }
-language-server = { command = "emmet-ls", args = ["--stdio"] }
+language-servers = [ "emmet-ls" ]
 formatter = { command = "emmet-ls" , args = ["--stdin"] }
  
 [[language]]
 name = "css"
 indent = { tab-width = 2, unit = "  " }
-language-server = { command = "css-languageserver", args = ["--stdio"] }
+language-servers = [ "css-languageserver" ]
 formatter = { command = "css-languageserver" , args = ["--stdin"] }
 
 [[language]]
 name = "json"
 indent = { tab-width = 2, unit = "  " }
-language-server = { command = "json-languageserver", args = ["--stdio"] }
+language-servers = [ "json-languageserver" ]
 formatter = { command = "json-languageserver" , args = ["--stdin"] }
  
 [[language]]
@@ -28,16 +28,14 @@ file-types = ["go"]
 roots = ["Gopkg.toml", "go.mod"]
 auto-format = true
 comment-token = "//"
-language-server = { command = "gopls" }
+language-servers = [ "gopls" ]
 indent = { tab-width = 4, unit = "\t" }
 
 [[language]]
 name = "astro"
-language-server = { command = "astro-ls", args = ["--stdio"]}
+language-servers = [ "astro-ls" ]
 formatter = { command = "astro-ls", args = ["--stdin"]}
 
 [[language]]
 name = "typescript"
-language-server = { command = "deno", args = ["lsp"] }
-config = { enable = true }
-
+language-servers = [ "deno" ]
