@@ -1,23 +1,24 @@
 [[language]]
 name = "rust"
 comment-token = "//"
+language-servers = ["rust"]
 
 [[language]]
 name = "html"
 indent = { tab-width = 2, unit = "  " }
-language-servers = [ "emmet-ls" ]
+language-servers = ["emmet-ls"]
 formatter = { command = "emmet-ls" , args = ["--stdin"] }
- 
+
 [[language]]
 name = "css"
 indent = { tab-width = 2, unit = "  " }
-language-servers = [ "css-languageserver" ]
+language-servers = ["css-languageserver"]
 formatter = { command = "css-languageserver" , args = ["--stdin"] }
 
 [[language]]
 name = "json"
 indent = { tab-width = 2, unit = "  " }
-language-servers = [ "json-languageserver" ]
+language-servers = ["json-languageserver"]
 formatter = { command = "json-languageserver" , args = ["--stdin"] }
  
 [[language]]
@@ -28,14 +29,42 @@ file-types = ["go"]
 roots = ["Gopkg.toml", "go.mod"]
 auto-format = true
 comment-token = "//"
-language-servers = [ "gopls" ]
+language-servers = ["gopls"]
 indent = { tab-width = 4, unit = "\t" }
 
 [[language]]
 name = "astro"
-language-servers = [ "astro-ls" ]
+language-servers = ["astro-ls"]
 formatter = { command = "astro-ls", args = ["--stdin"]}
 
 [[language]]
 name = "typescript"
-language-servers = [ "deno" ]
+language-servers = ["deno"]
+
+[language-server.rust]
+command = "rust-analyzer"
+args = [""]
+
+[language-server.emmet-ls]
+command = "emmet-ls"
+args = ["--stdio"]
+
+[language-server."css-languageserver"]
+command = "css-languageserver"
+args = ["--stdio"]
+
+[language-server."json-languageserver"]
+command = "json-languageserver"
+args = ["--stdio"]
+
+[language-server.gopls]
+command = "gopls"
+args = [""]
+
+[language-server."astro-ls"]
+command = "astro-ls"
+args = ["--stdio"]
+
+[language-server.deno]
+command = "deno"
+args = ["lsp"]
