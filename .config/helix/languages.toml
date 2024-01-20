@@ -1,7 +1,6 @@
 [[language]]
 name = "rust"
 comment-token = "//"
-language-servers = ["rust"]
 
 [[language]]
 name = "html"

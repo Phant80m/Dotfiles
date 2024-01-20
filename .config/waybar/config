@@ -137,6 +137,19 @@
 		"on-click-middle": "playerctl previous",
 		"exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null"
 	},
+	// "custom/media": {
+	// 	"format": "{icon} {}",
+	// 	"return-type": "json",
+	// 	"max-length": 32,
+	// 	"escape": true,
+	// 	"format-icons": {
+	// 		"default": " "
+	// 	},
+	// 	"on-click": "playerctl play-pause",
+	// 	"on-click-right": "playerctl next",
+	// 	"on-click-middle": "playerctl previous",
+	// 	"exec": " watch 2> /dev/null"
+	// },
 	"custom/prayer": {
 		"format": "{}",
 		"return-type": "json",
