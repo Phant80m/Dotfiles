@@ -1,0 +1,41 @@
+// bg = "#585b70"; // Surface2
+// fg = "#cdd6f4";
+// red = "#f38ba8";
+// green = "#a6e3a1";
+// blue = "#89b4fa";
+// yellow = "#f9e2af";
+// magenta = "#f5c2e7"; // Pink
+// orange = "#fab387"; // Peach
+// cyan = "#89dceb"; // Sky
+// black = "#1e1e2e"; // Mantle
+// white = "#cdd6f4";
+
+layout {
+    pane split_direction="vertical" {
+        pane
+    }
+
+    pane size=1 borderless=true {
+        plugin location="file:/$HOME/.config/zellij/plugins/zjstatus.wasm" {
+            format_left  "#[fg=#1e1e2e,bg=#f5c2e7,bold] {session} #[fg=#f5c2e7,bg=#1e1e2e]{tabs}"
+            format_right "#[fg=#1e1e2e,bg=#f5c2e7]{datetime}"
+            format_space "#[bg=#1e1e2e]"
+
+            // hide_frame_for_single_pane "true"
+
+            // mode_normal  "#[bg=]"
+
+            tab_normal              "#[fg=#1e1e2e,bg=#cdd6f4] #[fg=#1e1e2e,bg=#cdd6f4,bold]{name} #[fg=#cdd6f4,bg=#1e1e2e]"
+            tab_normal_fullscreen   "#[fg=#6C7086,bg=#fab387] {name} [] "
+            tab_normal_sync         "#[fg=#6C7086,bg=#1e1e2e] {name} <> "
+            tab_active              "#[fg=#1e1e2e,bg=#a6e3a1,bold] {name} #[fg=#a6e3a1,bg=#1e1e2e]"
+            tab_active_fullscreen   "#[fg=#1e1e2e,bg=#fab387] #[fg=#1e1e2e,bg=#fab387,bold,italic]{name} 󰊓 #[fg=#fab387,bg=#1e1e2e]"
+            tab_active_sync         "#[fg=#1e1e2e,bg=#1e1e2e,bold,italic] {name} <>"
+
+
+            datetime          "#[fg=#1e1e2e,bg=#f5c2e7,bold] {format} "
+            datetime_format   "%A, %d %b %Y %H:%M"
+            datetime_timezone "Australia/Melbourne"
+        }
+    }
+}

@@ -171,6 +171,14 @@ keybinds {
     shared_except "tmux" "locked" {
         bind "Ctrl b" { SwitchToMode "Tmux"; }
     }
+    shared_except "locked" {
+    bind "Ctrl y" {
+        LaunchOrFocusPlugin "file:/$HOME/.config/zellij/plugins/zellij_forgot.wasm" {
+            "LOAD_ZELLIJ_BINDINGS" "true"
+            floating true
+        }
+    }
+}
 }
 
 plugins {
@@ -179,14 +187,12 @@ plugins {
     strider { path "strider"; }
     compact-bar { path "compact-bar"; }
 }
-
 // Choose what to do when zellij receives SIGTERM, SIGINT, SIGQUIT or SIGHUP
 // eg. when terminal window with an active zellij session is closed
 // Options:
 //   - detach (Default)
 //   - quit
-//
-// on_force_close "quit"
+on_force_close "detach"
 
 //  Send a request for a simplified ui (without arrow fonts) to plugins
 //  Options:
@@ -270,7 +276,14 @@ theme "catppuccin-macchiato"
 // The name of the default layout to load on startup
 // Default: "default"
 //
-default_layout "compact"
+// default_layout "compact"
+
+// The folder in which Zellij will look for layouts
+//
+layout_dir "~/.config/zellij/layouts"
+// change this
+default_layout "/home/zayd/.config/zellij/layouts/default.kdl"
+// default_layout "default"
 
 // Choose the mode that zellij uses when starting up.
 // Default: normal
@@ -330,9 +343,6 @@ copy_command "wl-copy"                    // wayland
 //
 // mirror_session true
 
-// The folder in which Zellij will look for layouts
-//
-// layout_dir "/path/to/my/layout_dir"
 
 // The folder in which Zellij will look for themes
 //
