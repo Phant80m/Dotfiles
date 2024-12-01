@@ -1,20 +1,17 @@
-anchor_to_edges = true
 position = 'left'
+anchor_to_edges = true
 
-margin.top = 10
-margin.bottom = 10
-margin.left = 15
+margin.top = 3
+margin.bottom = 3
+margin.left = 5
 margin.right = 0
 
-height = 70
-
-
+height = 75
 
 
 [[start]]
 class = 'launcher'
 type = 'custom'
-
 
 [[start.bar]]
 on_click = '!rofi -show drun'
@@ -44,20 +41,22 @@ type = 'tray'
 type = 'clock'
 format = " %H:%M"
 
- 
 [[end]]
 type = 'music'
 player_type = 'mpris'
+truncate = "end"
 format = "  {title}  "
-truncate = "middle"
 icons.play = ""
 icons.pause = ""
-[[end]]
-type = "script"
-cmd = "echo -n ' ' $(pamixer --get-volume)"
-mode = "watch"
-interval = 50
 
+[[end]]
+type = "volume"
+format = "{icon}"
+volume_high = ""
+volume_medium = "󰖀"
+volume_low = "󰕿"
+muted = "󰝟"
+ 
 
 [[end]]
 class = 'power_menu'
@@ -90,9 +89,4 @@ class = 'power-btn'
 on_click = '!reboot'
 label = '''<span font-size='40pt'></span>'''
 type = 'button'
-
-[[end.popup.widgets]]
-label = '''Uptime: {{30000:uptime -p | cut -d ' ' -f2-}}'''
-name = 'uptime'
-type = 'label'
 

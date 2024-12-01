@@ -2,172 +2,151 @@
      font-family: JetBrainsMono Nerd Font;
      font-size: 17px;
 }
- window#waybar {
+window#waybar {
      background-color: rgba(36, 39, 58, 0.0);
-     border-radius: 15px;
+     border-radius: 0px;
      border: 2px solid rgba(198, 160, 246, 0.0);
      padding: 2px;
      color: #ffffff;
-     border-radius: 15px;
 }
 /* center module */
- #custom-media {
+#custom-media {
      color: #8aadf4;
-     border-radius: 15px;
      padding-left: 40px;
      padding-right: 35px;
      border: 1.5px solid #181926;
      background-color: #181926;
      margin: 2px;
-    /* border: 1.5 solid rgba(198, 160, 246, 0.5);
-     */
-    /* box-shadow: rgba(0, 0, 0, 0.3) 2 2 2 2px;
-     */
 }
 /* workspaces */
- #workspaces {
+#workspaces {
      background-color: #181926;
      color: #91d7e3;
-     border-radius: 15px;
+     border-radius: 0px;
      padding-left: 10px;
      padding-right: 10px;
      margin: 2px;
      border: 0px transparent;
-    /* border: 1.5 solid rgba(198, 160, 246, 0.5);
-     */
 }
- #workspaces button {
+#workspaces button {
      background-color: transparent;
      color: #cad3f5;
-     border-radius: 15px;
+     border-radius: 0px;
      border: 0px transparent;
 }
- #workspaces button:hover {
+#workspaces button:hover {
      background-color: #cad3f5;
 }
- #workspaces button.active {
+#workspaces button.active {
      color: #f5bde6;
      border: 0px transparent;
 }
 /* pulseaudio */
- #pulseaudio {
+#pulseaudio {
      background-color: #181926;
      padding-left: 20px;
      padding-right: 20px;
-     border-radius: 15px;
+     border-radius: 0px;
      color: #eed49f;
      margin: 2px;
-    /* border: 1.5 solid rgba(198, 160, 246, 0.5);
-     */
 }
-/*battery custom */
- #battery {
+/* battery custom */
+#battery {
      background-color: #181926;
      padding: 6px;
-     border-radius: 15px;
+     border-radius: 0px;
      color: #eed49f;
      margin: 2px;
-    /* border: 1.5 solid rgba(198, 160, 246, 0.5);
-     */
 }
- #network {
+#network {
      color: #f5a97f;
      padding-left: 15px;
      padding-right: 15px;
-     border-radius: 15px;
+     border-radius: 0px;
      background-color: #181926;
      margin: 2px;
 }
- #custom-power-menu {
+#custom-power-menu {
      padding-left: 20px;
      padding-right: 23px;
-     border-radius: 15px;
+     border-radius: 0px;
      background-color: #181926;
      color: #ed8796;
      margin: 2px;
-    /* border: 1.5 solid rgba(198, 160, 246, 0.5);
-     */
 }
- #custom-launcher {
+#custom-launcher {
      padding-left: 18px;
      padding-right: 23px;
      background-color: #181926;
-     border-radius: 15px;
+     border-radius: 0px;
      margin: 2px;
 }
- #tray {
+#tray {
      color: #f5a97f;
      padding-left: 20px;
      padding-right: 20px;
-     border-radius: 15px;
+     border-radius: 0px;
      background-color: #181926;
      margin: 2px;
 }
- #cpu {
+#cpu {
      color: #a6da95;
      padding-left: 20px;
      padding-right: 20px;
-     border-radius: 15px;
+     border-radius: 0px;
      background-color: #181926;
      margin: 2px;
 }
- #memory {
+#memory {
      color: #8aadf4;
      padding-left: 20px;
      padding-right: 20px;
-     border-radius: 15px;
+     border-radius: 0px;
      background-color: #181926;
      margin: 2px;
 }
- #custom-focus {
+#custom-focus {
      color: #f0c6c6;
      padding-left: 20px;
      padding-right: 23px;
      background-color: #181926;
-     border-radius: 15px;
+     border-radius: 0px;
      margin: 2px;
 }
- #clock {
+#clock {
      color: #c6a0f6;
-     border-radius: 15px;
+     border-radius: 0px;
      padding-left: 40px;
      padding-right: 40px;
      border: 1.5px solid #181926;
      background-color: #181926;
      margin: 2px;
-    /* border: 1.5 solid rgba(198, 160, 246, 0.5);
-     */
 }
- #custom-weather {
+#custom-weather {
      color: #8bd5ca;
-     border-radius: 15px;
+     border-radius: 0px;
      padding-left: 24px;
      padding-right: 24px;
      border: 1.5px solid #181926;
      background-color: #181926;
      margin: 2px;
-    /* border: 1.5 solid rgba(198, 160, 246, 0.5);
-     */
 }
- #custom-prayer {
+#custom-prayer {
      color: #7dc4e4;
-     border-radius: 15px;
+     border-radius: 0px;
      padding-left: 24px;
      padding-right: 24px;
      border: 1.5px solid #181926;
      background-color: #181926;
      margin: 2px;
-    /* border: 1.5 solid rgba(198, 160, 246, 0.5);
-     */
 }
- window .modules-left {
+window .modules-left {
      padding: 5px;
      background-color: rgba(17, 17, 27, 1);
-     border-radius: 15px;
+     border-radius: 0px;
 }
- window .modules-right {
+window .modules-right {
      padding: 5px;
      background-color: rgba(17, 17, 27, 1);
-     border-radius: 15px;
+     border-radius: 0px;
 }
- 

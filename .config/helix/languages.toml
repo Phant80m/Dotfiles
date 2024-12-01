@@ -1,6 +1,5 @@
 [[language]]
 name = "rust"
-comment-token = "//"
 
 [[language]]
 name = "html"

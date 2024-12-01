@@ -1,142 +1,133 @@
+/* General Styles */
 * {
-        font-family: JetBrainsMono Nerd Font;
-        font-size: 15px;
+    font-family: 'JetBrainsMono Nerd Font', monospace;
+    font-size: 15px;
 }
 
+/* Common Background */
 .background {
-        background-color: #11111b;
-        border-radius: 15px;
-        border: 2px solid rgba(198, 160, 246, 0.0);
-      	padding: 2px;
-        color: #ffffff;
-       	border-radius: 20px;
-  
+    background-color: #11111b;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    padding: 2px;
+    color: #ffffff;
 }
 
-#clock {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 20px;
-  color: #c6a0f6;
-  margin: 10px;
-  border: 1.5 solid #181926;
-  background-color: #181926;
-}
-#clock:hover {
-  background-color: #11111b;
-  border: 1.5 solid transparent;
+/* Clock Styles */
+.clock, .clock:hover {
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+    background-color: #181926;
 }
 
-#workspaces .item {
- padding: 6px;
- background-color: #181926;
- color: #cdd6f4;
- border-radius: 20px;
- margin: 10px;
-}
-#workspaces .item.focused {
-  color: #cba6f7;
+.clock {
+    color: #c6a0f6;
+    border: 1.5px solid #181926;
 }
 
+/* Workspace Item Styles */
+.workspaces .item {
+    padding: 6px;
+    background-color: #181926;
+    color: #cdd6f4;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.workspaces .item.focused {
+    color: #cba6f7;
+}
+
+/* Launcher Styles */
 #launcher {
- color: #eba0ac;
- background-color: #181926;
- border-radius: 15px;
- margin: 10px;
+    color: #eba0ac;
+    background-color: #181926;
+    border-radius: 15px;
+    margin: 10px;
 }
 
-#tray {
-  margin: 10px;
-  border-radius: 20px;
-}
-#tray .item {
-  padding: 10px;
+/* Tray and Item Styles */
+.tray, .tray .item {
+    margin: 10px;
+    border-radius: 20px;
 }
 
-#music {
- color: #8aadf4;
- border-radius: 20px;
- background-color: #181926;
- margin: 10px;
+.tray .item {
+    padding: 10px;
 }
-#popup-music {
-  border-radius: 20px;
-  margin: 10px;
-  padding: 10px;
-}
-#popup-music #controls #btn-play {
-  border-radius: 20px;
-  margin: 10px;
-  background-color: #a6e3a1;
-}
-#popup-music #controls #btn-next {
-  border-radius: 20px;
-  margin: 10px;
-  background-color: #181926;
-}
-#popup-music #controls #btn-prev {
-  border-radius: 20px;
-  margin: 10px;
-  background-color: #181926;
 
- }
-#popup-music #controls #btn-pause {
-  border-radius: 20px;
-  margin: 10px;
-  background-color: #f38ba8;
- }
-#popup-music #volume .icon {
-  color: transparent;
+/* Music and Popup Music Styles */
+.music, .popup-music {
+    border-radius: 20px;
+    margin: 10px;
+    background-color: #181926;
 }
-#popup-music #volume #slider {
-  color: transparent;
-  color: #181926;
-  background-color: #181926;
-  padding: 20px;
-  border-radius: 20px;
+
+.music {
+    color: #8aadf4;
 }
-#popup-music #artist {
-  color: #a6e3a1;
-  background-color: #181926;
-  padding: 20px;
-  border-radius: 20px;
- 
+
+.popup-music .controls .btn-play {
+    background-color: #a6e3a1;
 }
-#popup-music #title .icon {
-  color: transparent;
+
+.popup-music .controls .btn-next,
+.popup-music .controls .btn-prev {
+    background-color: #181926;
 }
-#popup-music #title .label {
-  
- color: #a6e3a1;
-  background-color: #181926;
-  padding: 20px;
-  border-radius: 20px;
- 
+
+.popup-music .controls .btn-pause {
+    background-color: #f38ba8;
 }
+
+.popup-music .icon,
+.popup-music .slider,
+.popup-music .artist,
+.popup-music .title .label {
+    color: #181926;
+    padding: 20px;
+}
+
+.popup-music .title .icon {
+    color: transparent;
+}
+
+/* Script Styles */
 #script {
- padding-top: 20px;
- padding-bottom: 20px;
- background-color: #181926;
- border-radius: 20px;
- color: #a6da95;
- margin: 10px;
+    padding: 20px;
+    background-color: #181926;
+    border-radius: 20px;
+    color: #a6da95;
+    margin: 10px;
+}
+
+/* Power Button Styles */
+.power-button, .power-btn {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #181926;
+    margin: 10px;
 }
 
 .power-button {
- border-radius: 20px;
- background-color: #181926;
- color: #ed8796;
- margin: 10px;
+    color: #ed8796;
 }
+
 .power-btn {
-  background-color: #181926;
-  border-radius: 20px;
-  margin: 10px;
-  color: #f38ba8;
-  padding: 50px;
+    color: #f38ba8;
 }
-.power-btn-popup {
-  padding: 10px;
-  margin: 10px;
-  border-radius: 20px;
+
+/* Volume and Popup Volume Styles */
+.volume, .popup-volume {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #181926;
+    color: #a6e3a1;
+}
+
+.popup-volume {
+    color: #a6e3a1;
+    padding: 20px;
 }

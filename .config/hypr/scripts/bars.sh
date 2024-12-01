@@ -9,7 +9,7 @@ then
     waybar &
 else
     # Ironbar is not running, so we need to turn it on
-    /home/zayd/.cargo/bin/ironbar &
+    $HOME/.local/bin/ironbar &
     # set animation to vertical scroll for vertical bar.
     hyprctl keyword animation  workspaces, 1, 7, bounce, slidevert
     killall waybar

@@ -78,7 +78,7 @@
 		"format-icons": [" ", " ", " ", " ", " "]
 	},
 	"tray": {
-	"spacing": 15
+		"spacing": 15
 	},
 
 
@@ -121,11 +121,11 @@
     	"format": "{}°",
     	"tooltip": true,
     	"interval": 3600,
-    	"exec": "wttrbar --location Melbourne",
+    	"exec": "$HOME/.cargo/bin/wttrbar --location Melbourne",
     	"return-type": "json"
 	},
 	"custom/media": {
-		"format": "{icon} {}",
+		"format": "{0} {1}",
 		"return-type": "json",
 		"max-length": 32,
 		"escape": true,
@@ -135,7 +135,7 @@
 		"on-click": "playerctl play-pause",
 		"on-click-right": "playerctl next",
 		"on-click-middle": "playerctl previous",
-		"exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null"
+		"exec": "$HOME/.config/waybar/scripts/mediaplayer2.py 2> /dev/null"
 	},
 	// "custom/media": {
 	// 	"format": "{icon} {}",
@@ -155,6 +155,6 @@
 		"return-type": "json",
    		"tooltip": true,
     	"interval": 3600,
-		"exec": "bilal waybar"
+		"exec": "$HOME/.cargo/bin/bilal waybar"
 	}
 }
