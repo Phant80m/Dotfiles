@@ -8,6 +8,16 @@ language-servers = ["emmet-ls"]
 formatter = { command = "emmet-ls" , args = ["--stdin"] }
 
 [[language]]
+name = "sql"
+language-servers = ["sql-language-server"]
+# args = ["method --stdio"]
+formatter = { command = "sql-language-server", args = ["method", "--stdio"]}
+
+[language-server.sql]
+command = "sql-language-server"
+args = ["method", "--stdio"]
+
+[[language]]
 name = "css"
 indent = { tab-width = 2, unit = "  " }
 language-servers = ["css-languageserver"]
@@ -66,3 +76,5 @@ args = ["--stdio"]
 [language-server.deno]
 command = "deno"
 args = ["lsp"]
+
+
