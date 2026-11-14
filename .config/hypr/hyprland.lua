@@ -252,8 +252,8 @@ hl.device({
 -- SCRATCHPAD
 -- ==================================================
 
--- SUPER + S toggles the magic special workspace.
--- SUPER + SHIFT + S sends the focused window to it.
+-- SUPER + I toggles the magic special workspace.
+-- SUPER + SHIFT + I sends the focused window to it.
 
 -- ==================================================
 -- KEYBINDINGS
@@ -280,15 +280,15 @@ hl.bind(mainMod .. " + K", hl.dsp.exec_cmd("playerctl previous"))
 
 -- Scratchpad
 hl.bind(
-    mainMod .. " + S",
+    mainMod .. " + I",
     hl.dsp.workspace.toggle_special("magic")
 )
 
 hl.bind(
-    mainMod .. " + SHIFT + S",
+    mainMod .. " + SHIFT + I",
     hl.dsp.window.move({ workspace = "special:magic" })
 )
-
+-- 
 -- Move focus with SUPER + arrow keys
 hl.bind(mainMod .. " + left",
     hl.dsp.focus({ direction = "left" }))
@@ -382,7 +382,8 @@ hl.bind(
 -- Screenshots
 hl.bind(
     "SUPER + SHIFT + S",
-    hl.dsp.exec_cmd('grim -g "$(slurp)" - | swappy -f -')
+    --[[ hl.dsp.exec_cmd('grim -g "$(slurp)" - | swappy -f -') --]]
+    hl.dsp.exec_cmd('grim -g "$(slurp)" - | satty -f - --copy-command wl-copy -o "~/Pictures/Screenshots/%Y%m%d_%H%M%S.png"')
 )
 
 hl.bind(
@@ -440,7 +441,16 @@ hl.window_rule({
     center = true,
     size = "50% 50%",
 })
+hl.window_rule({
+    name = "satty",
+    match = {
+        class = "com.gabm.satty",
+    },
 
+    float = true,
+    center = true,
+    size = "1600 900",
+})
 -- Nemo opacity
 hl.window_rule({
     name = "nemo-opacity",

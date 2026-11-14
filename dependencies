@@ -1,5 +1,5 @@
-hyprland-nvidia-git
-waybar-hyprland-git
+hyprland
+waybar
 ttf-jetbrains-mono-nerd
 rofi-lbonn-wayland-git
 kitty
@@ -31,3 +31,6 @@ atuin
 qt5-imageformats
 noto-fonts-emoji
 ttf-jetbrains-mono-nerd
+satty
+grim
+slurp
